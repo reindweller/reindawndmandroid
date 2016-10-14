@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minWidth="25px"
+    android:minHeight="25px">
+    <Button
+        android:text="Login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/loginNav" />
+    <Button
+        android:text="Register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/registerNav" />
+    <Button
+        android:text="News"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/newsNav" />
+    <Button
+        android:text="Map"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/mapNav" />
+  <Button
+        android:text="Distress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/distressNav" />
+    <Button
+        android:text="Logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/logoutNav" />
+</LinearLayout>

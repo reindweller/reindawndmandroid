@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="App1.App1" android:versionCode="1" android:versionName="1.0">
+  <uses-sdk android:minSdkVersion="16" android:targetSdkVersion="24" />
+  <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+  <uses-feature android:glEsVersion="0x00020000" android:required="true" />
+  <uses-permission android:name="com.googlemap.googlemap.permission.MAPS_RECEIVE" />
+  <uses-permission android:name="com.google.android.providers.gsf.permisson.READ_GSERVICES" />
+  <uses-permission android:name="android.permission.INTERNET" />
+  <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+  <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+  <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+  <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+  <application android:label="@string/ApplicationName" android:name="android.app.Application" android:allowBackup="true" android:debuggable="true">
+    <meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="@string/google_maps_key" />
+    <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
+    <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
+    <activity android:label="DistressActivity" android:name="md5579855c995bdb073d8182511e793544c.DistressActivity" />
+    <activity android:label="LoginActivity" android:name="md5579855c995bdb073d8182511e793544c.LoginActivity" />
+    <activity android:icon="@drawable/icon" android:label="App1" android:name="md5579855c995bdb073d8182511e793544c.MainActivity">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.LAUNCHER" />
+      </intent-filter>
+    </activity>
+    <activity android:label="Map" android:name="md5579855c995bdb073d8182511e793544c.MapActivity" />
+    <activity android:label="NewNewsActivity" android:name="md5579855c995bdb073d8182511e793544c.NewNewsActivity" />
+    <activity android:label="NewsActivity" android:name="md5579855c995bdb073d8182511e793544c.NewsActivity" />
+    <activity android:label="RegisterActivity" android:name="md5579855c995bdb073d8182511e793544c.RegisterActivity" />
+    <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="2147483647" android:authorities="App1.App1.mono.MonoRuntimeProvider.__mono_init__" />
+    <!--suppress ExportedReceiver-->
+    <receiver android:name="mono.android.Seppuku">
+      <intent-filter>
+        <action android:name="mono.android.intent.action.SEPPUKU" />
+        <category android:name="mono.android.intent.category.SEPPUKU.App1.App1" />
+      </intent-filter>
+    </receiver>
+  </application>
+  <user-permission android:name="com.googlemap.googlemap.permission.MAPS_RECEIVE" android:protectionLevel="signature" />
+</manifest>
